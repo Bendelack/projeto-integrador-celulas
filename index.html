@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="fontawesome/css/all.css" rel="stylesheet">
+    <link rel="icon" href="./imgs/celula-icon.jpg">
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <i id="open-icon" class="fa-solid fa-bars" onclick='abreMenu()'></i>
+    </header>
+
+    <div class="menu">
+        <i id="close-icon" class="fa-solid fa-xmark" onclick="fechaMenu()"></i>
+        <nav class="opcoes-mobile">
+            <ul>
+                <a href="index.html"><li>Home</li></a>
+                <a href="membrana.html"><li>Membrana</li></a>
+                <a href="citoplasma.html"><li>Citoplasma</li></a>
+                <a href="nucleo.html"><li>Núcleo</li></a>
+                <a href="divisaocelular.html"><li>Divisão Celular</li></a>
+                <a href="sobre.html"><li>Sobre</li></a>
+                <a href="referencias.html"><li>Referências</li></a>
+            </ul>
+        </nav>
+    </div>
+    
+    <div class="fundo"></div>
+
+    <div style="text-align: center;">
+        <img src="./imgs/celula-imagem.jpg" alt="celula" width="512px">
+    </div>
+
+    <div class="quiz">
+        <h2>Seja bem-vindo ao nosso site. Aqui nós abordamos o conteúdo de célula de uma maneira que você possa entender facilmente cada parte que compõe esse elemento tão importante para o nosso corpo.</h2>
+        <h3>Nesta página temos o nosso quiz, que fizemos com muito carinho para que você possa testar o seu conhecimento acerca deste assunto. Alertamos que você realize o quiz apenas depois de estudar todos os tópicos do site. Por fim, aproveite ao máximo o nosso trabalho. Bons estudos!</h3>
+
+        <div class="next">
+            <a href="membrana.html"><p>Iniciar estudos</p></a>
+        </div>
+
+        <input type="button" value="Responder o Quiz" id="quiz-btn">
+
+        <form id="form">
+
+            <h2 id="quiz-h2">Este é o nosso quiz sobre o conteúdo de Células. Boa sorte!!</h2>
+    
+            <!--questão 01-->
+            <ul id="top">
+                <h3>1. A membrana plasmática apresenta, em sua superfície, moléculas especiais que permitem a célula detectar outras substâncias presentes no meio externo, dando a ela certa sensibilidade química. Essas moléculas fazem parte:</h3>
+                <li id="a1"><input type="radio" name="q1" value="a1">a)  da cutícula.</li>
+                <li id="b1"><input type="radio" name="q1" value="b1">b)  do glicocálix.</li>
+                <li id="c1"><input type="radio" name="q1" value="c1">c) dos desmossomos.</li>
+                <li id="d1"><input type="radio" name="q1" value="d1">d)  dos cílios.</li>
+            </ul>
+    
+            <!--questão 02-->
+            <ul>
+                <h3>2. A membrana plasmática é um envoltório celular que delimita o espaço interno da célula. Quanto às suas propriedades e funções é correto afirmar, exceto:</h3>
+                <li id="a2"><input type="radio" name="q2" value="a2">a)  A difusão facilitada ocorre com o auxílio de proteínas transportadoras na membrana plasmática, do meio mais concentrado para o menos concentrado, com baixo gasto energético.</li>
+                <li id="b2"><input type="radio" name="q2" value="b2">b)  A osmose é a movimentação da água, através da membrana plasmática, quando há diferença nas concentrações dos solutos entre o meio extra e intracelular. A movimentação ocorre sempre da solução hipotônica para a hipertônica.</li>
+                <li id="c2"><input type="radio" name="q2" value="c2">c) A difusão simples é a movimentação de partículas (átomos, moléculas, íons etc.) para dentro ou para fora da célula, sem gasto de energia, sempre do ambiente mais concentrado para menos concentrado.</li>
+                <li id="d2"><input type="radio" name="q2" value="d2">d)  A membrana plasmática apresenta semipermeabilidade, ou permeabilidade seletiva, uma vez que permite a entrada de certas substâncias úteis à célula e a saída de outras.</li>
+            </ul>
+    
+            <!--questão 03-->
+            <ul>
+                <h3>3. As organelas celulares encontradas no citoplasma das células eucarióticas desempenham funções distintas. Dentre elas, destaca-se o retículo endoplasmático rugoso que tem a função de secretar proteínas. Essa função específica deve-se à presença, no retículo endoplasmático rugoso, de</h3>
+                <li id="a3"><input type="radio" name="q3" value="a3">a)  lisossomos.</li>
+                <li id="b3"><input type="radio" name="q3" value="b3">b)  ribossomos.</li>
+                <li id="c3"><input type="radio" name="q3" value="c3">c) peroxissomos.</li>
+                <li id="d3"><input type="radio" name="q3" value="d3">d)  desmossomos.</li>
+            </ul>
+    
+            <!--questão 04-->
+            <ul>
+                <h3>4. O retículo endoplasmático e o complexo de Golgi são organelas celulares cujas funções estão relacionadas. O complexo de Golgi</h3>
+                <li id="a4"><input type="radio" name="q4" value="a4">a)  envia polissacarídeos nele sintetizados para o retículo endoplasmático.</li>
+                <li id="b4"><input type="radio" name="q4" value="b4">b) envia proteínas nele sintetizadas para o retículo endoplasmático.</li>
+                <li id="c4"><input type="radio" name="q4" value="c4">c)  recebe polissacarídeos sintetizados no retículo endoplasmático.</li>
+                <li id="d4"><input type="radio" name="q4" value="d4">d)  recebe proteínas sintetizadas no retículo endoplasmático.</li>
+            </ul>
+    
+            <!--questão 05-->
+            <ul>
+                <h3>5. O núcleo celular foi descoberto pelo pesquisador escocês Robert Brown, que o reconheceu como componente fundamental das células. A respeito da constituição e função do núcleo celular, julgue as afirmativas e marque a alternativa FALSA:</h3>
+                <li id="a5"><input type="radio" name="q5" value="a5">a) O núcleo só é encontrado em células eucariontes, portanto as bactérias não apresentam essa organela.</li>
+                <li id="b5"><input type="radio" name="q5" value="b5">b) Existem células eucariontes com um único núcleo, células com vários núcleos e outras células anucleadas.</li>
+                <li id="c5"><input type="radio" name="q5" value="c5">c) Existem células eucariontes com um único núcleo, células com vários núcleos e outras células anucleadas.</li>
+                <li id="d5"><input type="radio" name="q5" value="d5">d) A carioteca é o envoltório nuclear, que impede a troca de qualquer tipo de material entre o núcleo e o restante da célula.</li>
+            </ul>
+    
+            <!--questão 06-->
+            <ul>
+                <h3>6. Os cromossomos são constituídos principalmente por:</h3>
+                <li id="a6"><input type="radio" name="q6" value="a6">a) ácido ribonucleico.</li>
+                <li id="b6"><input type="radio" name="q6" value="b6">b) enzimas.</li>
+                <li id="c6"><input type="radio" name="q6" value="c6">c) ácido desoxirribonucleico.</li>
+                <li id="d6"><input type="radio" name="q6" value="d6">d) fosfolipídeos.</li>
+            </ul>
+    
+            <!--questão 07-->
+            <ul>
+                <h3>7. O ciclo de vida dos animais é caracterizado pelo crescimento, reprodução e morte dos indivíduos. Sabendo disso, qual das alternativas abaixo indica, respectivamente, o tipo de divisão celular envolvido nos processos de crescimento do organismo e formação dos gametas?</h3>
+                <li id="a7"><input type="radio" name="q7" value="a7">a)  Fissão binária e mitose.</li>
+                <li id="b7"><input type="radio" name="q7" value="b7">b)  Mitose e meiose.</li>
+                <li id="c7"><input type="radio" name="q7" value="c7">c)  Mitose e fissão binária.</li>
+                <li id="d7"><input type="radio" name="q7" value="d7">d)  Meiose e mitose.</li>
+            </ul>
+    
+            <!--questão 08-->
+            <ul>
+                <h3>8. As células em geral são estimuladas a se dividirem quando atingem um determinado tamanho, assim como por substâncias denominadas de fatores de crescimento celular, passando pelo chamado Ciclo Celular, que é subdivido em três fases: G1 – S – G2. Analise as proposições em relação ao ciclo celular, e assinale a alternativa correta.</h3>
+                <li id="a8"><input type="radio" name="q8" value="a8">a) Na fase <b>S</b> ocorre a duplicação do DNA.</li>
+                <li id="b8"><input type="radio" name="q8" value="b8">b) Na fase <b>G2</b> ocorre o pareamento dos cromossomos homólogos.</li>
+                <li id="c8"><input type="radio" name="q8" value="c8">c) Na fase <b>G1</b> todo o DNA está altamente condensado.</li>
+                <li id="d8"><input type="radio" name="q8" value="d8">d) Na fase <b>G1</b> e na <b>G2</b> as células apresentam a mesma quantidade de DNA.</li>
+            </ul>
+            <div class="resposta">
+                <p id="result"></p>
+            </div>
+    
+            <div id="invalido">
+                <p>Atenção! Para conferir o resultado é necessário responder todas as questões.</p>
+            </div>
+            
+            <div class="botoes">
+                <input type="button" id="btn" value="Conferir">
+                <a href="#top"><input type="button" value="Refazer" id="refazer"></a>
+            </div>
+            
+        </form>
+        
+    </div>    
+
+    <script src="scripts/script.js"></script>
+    <script src="scripts/quiz.js"></script>
+</body>
+</html>
